@@ -26,9 +26,9 @@ import spectrum from "./company/spectrum.png";
 import uscellular from "./company/uscellular.png";
 import matts from "./company/matts.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import wedo from "./we-do.png";
+import encyclone from "./encyclone.png";
+import moodforfood from "./mood-for-food.png";
 
 export {
   logo,
@@ -56,7 +56,7 @@ export {
   spectrum,
   uscellular,
   matts,
-  carrent,
-  jobit,
-  tripguide,
+  wedo,
+  encyclone,
+  moodforfood,
 };

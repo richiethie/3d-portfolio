@@ -7,7 +7,7 @@ import { projects } from "../constants" // where to find project contents ctrl c
 import { fadeIn, textVariant } from '../utils/motion'
 
 
-const ProjectCard = ( {index, name, description, tags, image, source_code_link} ) => {
+const ProjectCard = ( {index, name, description, tags, image, source_code_link, live_site} ) => {
   return (
     <motion.div variants={fadeIn('up', 'spring', index * 0.5, 0.75)}>
       <Tilt
@@ -43,7 +43,12 @@ const ProjectCard = ( {index, name, description, tags, image, source_code_link} 
         <div className="mt-5">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary test-[14px]">{description}</p>
-
+          <button 
+            onClick={() => window.open(live_site, "_blank")}
+            className='bg-[#915eff] mt-5 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
+          >
+            Check it out
+          </button>
         </div>
 
         <div className="mt-4 flex flex-wrap gap-2">

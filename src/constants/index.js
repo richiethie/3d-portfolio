@@ -19,9 +19,9 @@ import {
     spectrum,
     uscellular,
     matts,
-    carrent,
-    jobit,
-    tripguide,
+    wedo,
+    encyclone,
+    moodforfood,
     threejs,
   } from "../assets";
   
@@ -46,7 +46,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "UX/UI Design",
       icon: mobile,
     },
     {
@@ -170,7 +170,7 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+        "I thought it was impossible to make a website as beautiful as our product, but Richie proved me wrong.",
       name: "Sara Lee",
       designation: "CFO",
       company: "Acme Co",
@@ -178,7 +178,7 @@ import {
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+        "I've never met a web developer who truly cares about their clients' success like Richie does.",
       name: "Chris Brown",
       designation: "COO",
       company: "DEF Corp",
@@ -186,7 +186,7 @@ import {
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        "After Richie optimized our website, our traffic increased by 50%. We can't thank them enough!",
       name: "Lisa Wang",
       designation: "CTO",
       company: "456 Enterprises",
@@ -198,7 +198,7 @@ import {
     {
       name: "We Do",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Find the right activity for you with We Do",
       tags: [
         {
           name: "handlebars",
@@ -213,13 +213,14 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: wedo,
+      source_code_link: "https://github.com/ddwk21/we-do",
+      live_site: "https://we-do-application.herokuapp.com/login",
     },
     {
       name: "Encyclone",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Browse through many different Enclyclopedia Brittanica topics",
       tags: [
         {
           name: "react",
@@ -234,13 +235,14 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: encyclone,
+      source_code_link: "https://github.com/ddwk21/cyclone",
+      live_site: "https://fierce-sands-41595.herokuapp.com/",
     },
     {
       name: "Mood for Food",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Find your horoscope for the day and get recommended food based on your mood",
       tags: [
         {
           name: "jquery",
@@ -255,8 +257,9 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: moodforfood,
+      source_code_link: "https://github.com/kevinkraiss/mood-for-food",
+      live_site: "https://kevinkraiss.github.io/mood-for-food/",
     },
   ];
   
