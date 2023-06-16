@@ -1,0 +1,11 @@
+Model Information:
+* title:	astronaut
+* source:	https://sketchfab.com/3d-models/astronaut-4ad51bb1b5ac4485a0e9dcb0eb36222a
+* author:	bazylevnik0 (https://sketchfab.com/bazylevnik0)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "astronaut" (https://sketchfab.com/3d-models/astronaut-4ad51bb1b5ac4485a0e9dcb0eb36222a) by bazylevnik0 (https://sketchfab.com/bazylevnik0) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

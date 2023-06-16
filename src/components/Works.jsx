@@ -5,7 +5,7 @@ import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants" // where to find project contents ctrl click
 import { fadeIn, textVariant } from '../utils/motion'
-import { fade } from "maath/dist/declarations/src/misc"
+
 
 const ProjectCard = ( {index, name, description, tags, image, source_code_link} ) => {
   return (

@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
+// import { ComputersCanvas } from './canvas'
+import { AstronautsCanvas } from './canvas'
 
 const Hero = () => {
   return (
@@ -14,18 +15,19 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className='text-[#915eff]'>Richie</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop 3D visuals, user <br className='sm:block hidden' />interfaces and web applications.</p>
+          <p className={`${styles.heroSubText} mt-2 text-white-100`}>I am a software developer that builds<br className='sm:block hidden' /> 3D visuals, web applications, and has <br className='sm:block hidden' /> a passion for UX/UI design.</p>
         </div>
 
       </div>
-      <ComputersCanvas />
+      {/* <ComputersCanvas /> */}
+      <AstronautsCanvas />
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center' >
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border secondary flex justify-center items-start p-2'>
             <motion.div 
               animate={{
-                y: [0, 24, 0]
+                y: [10, 20, 0]
               }}
               transition={{
                 duration: 1.5,

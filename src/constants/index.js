@@ -15,10 +15,10 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
+    rt,
+    spectrum,
+    uscellular,
+    matts,
     carrent,
     jobit,
     tripguide,
@@ -116,55 +116,53 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
-      iconBg: "#383E56",
-      date: "March 2020 - April 2021",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
       title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      company_name: "Freelance",
+      icon: rt,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Sept 2022 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed and maintained responsive websites for clients across various industries, utilizing HTML, CSS, and JavaScript",
+        "Collaborated with clients to determine their needs and goals, and provided recommendations to improve their online presence",
+        "Maintained and updated existing websites, fixing bugs and enhancing functionality as needed.",
+        "Implemented SEO best practices to improve website visibility and search engine rankings.",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Sales Associate",
+      company_name: "Spectrum",
+      icon: spectrum,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "Oct 2020 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Achieving consistent sales goals",
+        "Mentoring peers and guiding others to be successful",
+        "Maintaining expert system knowledge",
+        "Kept up with knowledge of TV, Internet, Wireless products, Pricing plans, Promotions, and Services."
+      ],
+    },
+    {
+      title: "Retail Wireless Consultant",
+      company_name: "US Cellular",
+      icon: uscellular,
+      iconBg: "#383E56",
+      date: "Jul 2019 - Oct 2020",
+      points: [
+        "Create customer value by asking discovery questions",
+        "Driving sales results for my store",
+        "Helping and teaching peers to excel and create results",
+        "Top store and area performance results",
+      ],
+    },
+    {
+      title: "District Manager",
+      company_name: "Matt's DJ Service",
+      icon: matts,
+      iconBg: "#E6DEDD",
+      date: "Sept 2016 - Jun 2019",
+      points: [
+        "DJ Weddings while bringing enthusiasm and great customer satisfaction",
+        "Oversee safety regulations for travels in the Fox Valley area",
       ],
     },
   ];
@@ -198,20 +196,20 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "We Do",
       description:
         "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
       tags: [
         {
-          name: "react",
+          name: "handlebars",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "express",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "bootstrap",
           color: "pink-text-gradient",
         },
       ],
@@ -219,7 +217,7 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Job IT",
+      name: "Encyclone",
       description:
         "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
       tags: [
@@ -232,7 +230,7 @@ import {
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "tailwind",
           color: "pink-text-gradient",
         },
       ],
@@ -240,16 +238,16 @@ import {
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Mood for Food",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "jquery",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "restapi",
           color: "green-text-gradient",
         },
         {
