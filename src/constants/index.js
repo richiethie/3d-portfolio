@@ -23,6 +23,8 @@ import {
     encyclone,
     moodforfood,
     threejs,
+    recordSite,
+    profilePic,
   } from "../assets";
   
   export const navLinks = [
@@ -170,28 +172,28 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Richie proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+        "Testimonial coming soon!",
+      name: "Kevin Flood",
+      designation: "CEO",
+      company: "Record Entertainment",
+      image: profilePic,
     },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Richie does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Richie optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
+    // {
+    //   testimonial:
+    //     "I've never met a web developer who truly cares about their clients' success like Richie does.",
+    //   name: "Chris Brown",
+    //   designation: "COO",
+    //   company: "DEF Corp",
+    //   image: "https://randomuser.me/api/portraits/men/5.jpg",
+    // },
+    // {
+    //   testimonial:
+    //     "After Richie optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    //   name: "Lisa Wang",
+    //   designation: "CTO",
+    //   company: "456 Enterprises",
+    //   image: "https://randomuser.me/api/portraits/women/6.jpg",
+    // },
   ];
   
   const projects = [
@@ -260,6 +262,28 @@ import {
       image: moodforfood,
       source_code_link: "https://github.com/kevinkraiss/mood-for-food",
       live_site: "https://kevinkraiss.github.io/mood-for-food/",
+    },
+    {
+      name: "Record Entertainment",
+      description:
+        "Complete website makeover for Record Entertainment, a local Wedding Entertainment company",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "npm",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: recordSite,
+      source_code_link: "https://recordentertainment.com/",
+      live_site: "https://recordentertainment.com/",
     },
   ];
   

@@ -29,6 +29,9 @@ import matts from "./company/matts.png";
 import wedo from "./we-do.png";
 import encyclone from "./encyclone.png";
 import moodforfood from "./mood-for-food.png";
+import recordSite from '../assets/record-site.png'
+
+import profilePic from '../assets/Kevin.jpg'
 
 export {
   logo,
@@ -59,4 +62,6 @@ export {
   wedo,
   encyclone,
   moodforfood,
+  recordSite,
+  profilePic,
 };
