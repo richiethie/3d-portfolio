@@ -150,7 +150,7 @@ import {
       company_name: "Spectrum",
       icon: spectrum,
       iconBg: "#383E56",
-      date: "Oct 2020 - Present",
+      date: "Oct 2020 - Apr 2024",
       points: [
         "Achieving consistent sales goals",
         "Mentoring peers and guiding others to be successful",
