@@ -21,6 +21,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
+import roydan from "./company/Roydan.png"
+import accurate from "./company/Accurate-Icon.png"
 import rt from "./company/rt-new-logo3.png";
 import spectrum from "./company/spectrum.png";
 import uscellular from "./company/uscellular.png";
@@ -55,6 +57,8 @@ export {
   tailwind,
   typescript,
   threejs,
+  roydan,
+  accurate,
   rt,
   spectrum,
   uscellular,
