@@ -15,6 +15,8 @@ import {
     git,
     figma,
     docker,
+    roydan,
+    accurate,
     rt,
     spectrum,
     uscellular,
@@ -118,23 +120,36 @@ import {
   
   const experiences = [
     {
-      title: "Web Developer",
-      company_name: "Freelance",
-      icon: rt,
+      title: "Fullstack Software Developer",
+      company_name: "Roydan Enterprises",
+      icon: roydan,
       iconBg: "#383E56",
-      date: "Sept 2022 - Present",
+      date: "Sept 2024 - Present",
       points: [
-        "Developed and maintained responsive websites for clients across various industries, utilizing HTML, CSS, and JavaScript",
-        "Collaborated with clients to determine their needs and goals, and provided recommendations to improve their online presence",
-        "Maintained and updated existing websites, fixing bugs and enhancing functionality as needed.",
-        "Implemented SEO best practices to improve website visibility and search engine rankings.",
+        "Design and implement user interfaces using React, JavaScript and TypeScript.",
+        "Optimize front-end performance for speed and scalability.",
+        "Develop server-side logic, RESTful APIs, and web services.",
+        "Write clean, maintainable, and efficient code utilizing C# and .NET.",
+      ],
+    },
+    {
+      title: "Software Programmer",
+      company_name: "Accurate Controls",
+      icon: accurate,
+      iconBg: "#E6DEDD",
+      date: "Apr 2024 - Sept 2024",
+      points: [
+        "Design, modify, develop, write, and implement custom software applications for customer security systems.",
+        "Participate in the testing process through test review and analysis, test witnessing and certification of software.",
+        "Proficient in SQL-based databases and capable of applying programming knowledge to diverse environments.",
+        "Developed Python scripts to reduce user data entry and reduce development time.",
       ],
     },
     {
       title: "Sales Associate",
       company_name: "Spectrum",
       icon: spectrum,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Oct 2020 - Present",
       points: [
         "Achieving consistent sales goals",
@@ -147,7 +162,7 @@ import {
       title: "Retail Wireless Consultant",
       company_name: "US Cellular",
       icon: uscellular,
-      iconBg: "#383E56",
+      iconBg: "#E6DEDD",
       date: "Jul 2019 - Oct 2020",
       points: [
         "Create customer value by asking discovery questions",
@@ -160,7 +175,7 @@ import {
       title: "District Manager",
       company_name: "Matt's DJ Service",
       icon: matts,
-      iconBg: "#E6DEDD",
+      iconBg: "#383E56",
       date: "Sept 2016 - Jun 2019",
       points: [
         "DJ Weddings while bringing enthusiasm and great customer satisfaction",
