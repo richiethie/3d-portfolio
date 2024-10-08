@@ -61,28 +61,6 @@ const Astronauts = ({ isMobile }) => {
     });
   };
 
-  // Animate the astronaut flying in from the distance
-  useFrame(({ clock }) => {
-    const elapsedTime = clock.getElapsedTime();
-    if (astronautRef.current) {
-      // Adjust these values for speed and position
-      const startZ = -3; // Starting position
-      const endZ = isMobile ? 0 : -2;    // Final resting position in the frame (adjust as necessary)
-
-      // Move towards the camera
-      astronautRef.current.position.z = THREE.MathUtils.lerp(startZ, endZ, Math.min(elapsedTime / 2, 1));
-
-      // Scale from smaller to original size (adjust 0.5 as needed for initial size)
-      const startScale = 0.01; // Initial scale
-      const endScale = isMobile ? 1.35 : 1.8; // Final scale
-      astronautRef.current.scale.set(
-        THREE.MathUtils.lerp(startScale, endScale, Math.min(elapsedTime / 2, 1)),
-        THREE.MathUtils.lerp(startScale, endScale, Math.min(elapsedTime / 2, 1)),
-        THREE.MathUtils.lerp(startScale, endScale, Math.min(elapsedTime / 2, 1))
-      );
-    }
-  });
-
   useEffect(() => {
     if (nodes) {
       replaceTextures(nodes.Sketchfab_Scene); // Call the texture replacement function
@@ -102,16 +80,55 @@ const Astronauts = ({ isMobile }) => {
     };
   }, [actions]);
 
+  // Track scroll position and update astronaut movement
+  useEffect(() => {
+    const handleScroll = () => {
+      if (astronautRef.current) {
+        // Get scroll value and normalize it
+        const scrollY = window.scrollY || window.pageYOffset;
+        const scrollFactor = scrollY / window.innerHeight;  // Normalize scroll (0 to 1 range)
+
+        // Adjust these values to move the astronaut accordingly
+        // ADD TERNERY FOR MOBILE
+        const startY = -4.2;  // Initial Y position
+        const endY = startY - scrollFactor * 200;  // Y-axis movement
+
+        const startZ = -2;  // Initial Z position
+        const endZ = startZ - scrollFactor * 350;  // Z-axis movement (moves backward as scroll increases)
+
+        const startX = 1;  // Initial X position
+        const endX = startX - scrollFactor * 300;  // X-axis movement (moves left as scroll increases)
+
+        // Adjust rotation values (rotating around the Y-axis)
+        const startRotationX = 0.1;  // Initial Y-axis rotation
+        const endRotationX = startRotationX + scrollFactor * Math.PI;
+        const startRotationY = 0.8;  // Initial Y-axis rotation
+        const endRotationY = startRotationY + scrollFactor * Math.PI * 2;
+
+        // Update the astronaut's position
+        astronautRef.current.position.set(
+          endX,  // X position (moves left)
+          endY,  // Y position (moves up)
+          endZ   // Z position (moves backward)
+        );
+        astronautRef.current.rotation.set(endRotationX, endRotationY, 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <group>
       <hemisphereLight intensity={0.15} groundColor='black' />
       <pointLight
-        position={isMobile ? [0, 1.6, 1.4] : [1.2, 2.5, 0]}
-        intensity={isMobile ? 4 : 3} 
+        position={isMobile ? [0.5, 1, 1.7] : [1.4, 2.5, 0]}
+        intensity={isMobile ? 10 : 10} 
       />
       <spotLight
         position={[-5, 5, 10]}
-        angle={0.12}
+        angle={0.05}
         penumbra={1}
         intensity={1}
         castShadow
@@ -121,7 +138,7 @@ const Astronauts = ({ isMobile }) => {
         ref={astronautRef}  // Bind the reference to the primitive
         object={nodes.Sketchfab_Scene}  // Use the loaded model
         scale={isMobile ? 1.35 : 1.70}  // Scale based on mobile
-        position={isMobile ? [0, -4.3, -10] : [1, -4.2, -3]} // Start position further back (Z-axis)
+        position={isMobile ? [0, -4.3, 0] : [1, -4.2, -2]} // Start position further back (Z-axis)
         rotation={[0.1, 0.8, 0]}
       />
     </group>
