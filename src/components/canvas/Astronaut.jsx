@@ -121,7 +121,7 @@ const Astronauts = ({ isMobile }) => {
         ref={astronautRef}  // Bind the reference to the primitive
         object={nodes.Sketchfab_Scene}  // Use the loaded model
         scale={isMobile ? 1.35 : 1.70}  // Scale based on mobile
-        position={isMobile ? [0, -4.1, -10] : [1, -4.2, -3]} // Start position further back (Z-axis)
+        position={isMobile ? [0, -4.3, -10] : [1, -4.2, -3]} // Start position further back (Z-axis)
         rotation={[0.1, 0.8, 0]}
       />
     </group>
@@ -154,11 +154,11 @@ const AstronautsCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
-        <OrbitControls 
+        {/* <OrbitControls 
           enableZoom={false} 
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
-        /> 
+        />  */}
         <Astronauts isMobile={isMobile} />
       </Suspense>
 
