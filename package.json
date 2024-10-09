@@ -1,12 +1,12 @@
 {
-  "name": "betterweb",
+  "name": "richiethie",
   "homepage": "https://richiethie.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node generate-sitemap.js",
     "deploy": "gh-pages -d build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
@@ -23,6 +23,7 @@
     "react-router-dom": "^6.13.0",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
+    "sitemap": "^8.0.0",
     "three": "^0.169.0"
   },
   "devDependencies": {
