@@ -90,13 +90,13 @@ const Astronauts = ({ isMobile }) => {
 
         // Adjust these values to move the astronaut accordingly
         // ADD TERNERY FOR MOBILE
-        const startY = -4.2;  // Initial Y position
+        const startY = isMobile ? -4.2 : -4.2;  // Initial Y position
         const endY = startY - scrollFactor * 200;  // Y-axis movement
 
-        const startZ = -2;  // Initial Z position
+        const startZ = isMobile ? 0 : -2;  // Initial Z position
         const endZ = startZ - scrollFactor * 350;  // Z-axis movement (moves backward as scroll increases)
 
-        const startX = 1;  // Initial X position
+        const startX = isMobile ? 0 : 1;  // Initial X position
         const endX = startX - scrollFactor * 300;  // X-axis movement (moves left as scroll increases)
 
         // Adjust rotation values (rotating around the Y-axis)
