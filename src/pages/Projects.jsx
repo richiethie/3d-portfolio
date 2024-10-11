@@ -17,9 +17,9 @@ const Projects = () => {
         <div className='relative z-0 bg-primary'>
             <Navbar />
             <StarsCanvas />
-            <div className='absolute z-10'>
+            {/* <div className='absolute z-10'>
                 <RocketCanvas />
-            </div>
+            </div> */}
             <AllProjects />
             <Footer />
         </div>
