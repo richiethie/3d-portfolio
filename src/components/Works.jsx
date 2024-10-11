@@ -5,6 +5,7 @@ import { github } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { projects } from "../constants" // where to find project contents ctrl click
 import { fadeIn, textVariant } from '../utils/motion'
+import { Link } from 'react-router-dom'
 
 
 const ProjectCard = ( {index, name, description, tags, image, source_code_link, live_site} ) => {
@@ -72,18 +73,23 @@ const Works = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <h2 className={styles.sectionHeadText}>Featured Projects.</h2>
       </motion.div>
 
-      <div className="w-full flex">
+      <motion.div className="w-full flex flex-col" variants={fadeIn("", "", 0.1, 1)}>
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </motion.p>
-
-      </div>
+        <Link to='/projects'>
+          <button
+            className='bg-[#915eff] mt-5 py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl'
+          >
+            View all
+          </button>
+        </Link>
+      </motion.div>
 
       <div className="mt-20 flex flex-wrap gap-7">
         {projects.map((project, index) => (
