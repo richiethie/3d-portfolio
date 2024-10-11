@@ -256,6 +256,97 @@ import {
       source_code_link: "https://github.com/ddwk21/cyclone",
       live_site: "https://fierce-sands-41595.herokuapp.com/",
     },
+    // {
+    //   name: "Mood for Food",
+    //   description:
+    //     "Find your horoscope for the day and get recommended food based on your mood",
+    //   tags: [
+    //     {
+    //       name: "jquery",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "restapi",
+    //       color: "green-text-gradient",
+    //     },
+    //     {
+    //       name: "css",
+    //       color: "pink-text-gradient",
+    //     },
+    //   ],
+    //   image: moodforfood,
+    //   source_code_link: "https://github.com/kevinkraiss/mood-for-food",
+    //   live_site: "https://kevinkraiss.github.io/mood-for-food/",
+    // },
+    {
+      name: "Record Entertainment",
+      description:
+        "Complete website makeover for Record Entertainment, a local Wedding Entertainment company",
+      tags: [
+        {
+          name: "javascript",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "npm",
+          color: "green-text-gradient",
+        },
+        {
+          name: "css",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: recordSite,
+      source_code_link: "https://recordentertainment.com/",
+      live_site: "https://recordentertainment.com/",
+    },
+  ];
+
+  const allProjects = [
+    {
+      name: "We Do",
+      description:
+        "Find the right activity for you with We Do",
+      tags: [
+        {
+          name: "handlebars",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "express",
+          color: "green-text-gradient",
+        },
+        {
+          name: "bootstrap",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: wedo,
+      source_code_link: "https://github.com/ddwk21/we-do",
+      live_site: "https://we-do-application.herokuapp.com/login",
+    },
+    {
+      name: "Encyclone",
+      description:
+        "Browse through many different Enclyclopedia Brittanica topics",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: encyclone,
+      source_code_link: "https://github.com/ddwk21/cyclone",
+      live_site: "https://fierce-sands-41595.herokuapp.com/",
+    },
     {
       name: "Mood for Food",
       description:
@@ -302,4 +393,4 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, allProjects };

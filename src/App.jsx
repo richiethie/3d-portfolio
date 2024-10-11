@@ -1,28 +1,21 @@
-import { BrowserRouter } from "react-router-dom"
+import React from 'react'
+import{Routes, Route} from 'react-router-dom'
+import Home from './pages/Home'
+import Projects from './pages/Projects'
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
 
 const App = () => {
 
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primary'>
-        {/* <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center"> */}
-          <Navbar />
-          <StarsCanvas />
-          <Hero />
-        {/* </div> */}
-        <About />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className="relative z-0">
-          <Contact />
-          {/* <StarsCanvas /> */}
-        </div>
-      </div>
-    </BrowserRouter>
+    <Routes >
+      <Route path='/' element={<Home />} />
+      <Route path='/projects' element={<Projects />} />
+      {/* <Route path='/products/:id' element={<ShowProducts />} />
+      <Route path='/cart/:id' element={<AddToCart />} />
+      <Route path='/products/update/:id' element={<EditProducts />} />
+      <Route path='/products/delete/:id' element={<DeleteProducts />} />
+      <Route path='/cart/delete/:id' element={<DeleteCart />} /> */}
+    </Routes>
   )
 }
 
