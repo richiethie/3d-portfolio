@@ -27,6 +27,8 @@ import {
     threejs,
     recordSite,
     profilePic,
+    charlesArmon,
+    FilmShareFeed,
   } from "../assets";
   
   export const navLinks = [
@@ -37,6 +39,10 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "projects",
+      title: "Projects",
     },
     {
       id: "contact",
@@ -193,14 +199,14 @@ import {
       company: "Record Entertainment",
       image: profilePic,
     },
-    // {
-    //   testimonial:
-    //     "I've never met a web developer who truly cares about their clients' success like Richie does.",
-    //   name: "Chris Brown",
-    //   designation: "COO",
-    //   company: "DEF Corp",
-    //   image: "https://randomuser.me/api/portraits/men/5.jpg",
-    // },
+    {
+      testimonial:
+        "Testimonial coming soon!",
+      name: "Charles Armon",
+      designation: "CEO",
+      company: "Armon Empire",
+      image: charlesArmon,
+    },
     // {
     //   testimonial:
     //     "After Richie optimized our website, our traffic increased by 50%. We can't thank them enough!",
@@ -230,6 +236,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      color: {
+        text: "blue-text-gradient",
+        border: "border-blue-500",
+        bg: "bg-blue-800/50",
+      },
       image: wedo,
       source_code_link: "https://github.com/ddwk21/we-do",
       live_site: "https://we-do-application.herokuapp.com/login",
@@ -252,32 +263,43 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      color: {
+        text: "green-text-gradient",
+        border: "border-green-500",
+        bg: "bg-green-800/50",
+      },
       image: encyclone,
       source_code_link: "https://github.com/ddwk21/cyclone",
       live_site: "https://fierce-sands-41595.herokuapp.com/",
     },
-    // {
-    //   name: "Mood for Food",
-    //   description:
-    //     "Find your horoscope for the day and get recommended food based on your mood",
-    //   tags: [
-    //     {
-    //       name: "jquery",
-    //       color: "blue-text-gradient",
-    //     },
-    //     {
-    //       name: "restapi",
-    //       color: "green-text-gradient",
-    //     },
-    //     {
-    //       name: "css",
-    //       color: "pink-text-gradient",
-    //     },
-    //   ],
-    //   image: moodforfood,
-    //   source_code_link: "https://github.com/kevinkraiss/mood-for-food",
-    //   live_site: "https://kevinkraiss.github.io/mood-for-food/",
-    // },
+    {
+      name: "FilmShare",
+      capstone: true,
+      description:
+        "FilmShare is a platform for creators to showcase and share short films under 10 minutes, fostering a community of passionate filmmakers. It features a clean, modern design, with a user-driven feed, film ranking system, and a search functionality for discovering films, users, and series.",
+      tags: [
+        {
+          name: "AWS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TypeScript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "pink-text-gradient",
+        },
+      ],
+      color: {
+        text: "pink-text-gradient",
+        border: "border-pink-500",
+        bg: "bg-pink-800/50",
+      },
+      image: FilmShareFeed,
+      source_code_link: "https://github.com/richiethie/FilmProject",
+      live_site: "https://filmshare.vercel.app/",
+    },
     {
       name: "Record Entertainment",
       description:
@@ -296,6 +318,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      color: {
+        text: "orange-text-gradient",
+        border: "border-orange-500",
+        bg: "bg-orange-800/50",
+      },
       image: recordSite,
       source_code_link: "https://recordentertainment.com/",
       live_site: "https://recordentertainment.com/",
@@ -303,6 +330,34 @@ import {
   ];
 
   const allProjects = [
+    {
+      name: "FilmShare",
+      capstone: true,
+      description:
+        "FilmShare is a platform for creators to showcase and share short films under 10 minutes, fostering a community of passionate filmmakers. It features a clean, modern design, with a user-driven feed, film ranking system, and a search functionality for discovering films, users, and series.",
+      tags: [
+        {
+          name: "AWS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "TypeScript",
+          color: "green-text-gradient",
+        },
+        {
+          name: "MongoDB",
+          color: "pink-text-gradient",
+        },
+      ],
+      color: {
+        text: "pink-text-gradient",
+        border: "border-pink-500",
+        bg: "bg-pink-800/50",
+      },
+      image: FilmShareFeed,
+      source_code_link: "https://github.com/richiethie/FilmProject",
+      live_site: "https://filmshare.vercel.app/",
+    },
     {
       name: "We Do",
       description:
@@ -321,6 +376,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      color: {
+        text: "blue-text-gradient",
+        border: "border-blue-500",
+        bg: "bg-blue-800/60",
+      },
       image: wedo,
       source_code_link: "https://github.com/ddwk21/we-do",
       live_site: "https://we-do-application.herokuapp.com/login",
@@ -343,6 +403,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      color: {
+        text: "green-text-gradient",
+        border: "border-green-500",
+        bg: "bg-green-800/60",
+      },
       image: encyclone,
       source_code_link: "https://github.com/ddwk21/cyclone",
       live_site: "https://fierce-sands-41595.herokuapp.com/",
@@ -365,6 +430,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      color: {
+        text: "pink-text-gradient",
+        border: "border-pink-500",
+        bg: "bg-pink-800/60",
+      },
       image: moodforfood,
       source_code_link: "https://github.com/kevinkraiss/mood-for-food",
       live_site: "https://kevinkraiss.github.io/mood-for-food/",
@@ -387,6 +457,11 @@ import {
           color: "pink-text-gradient",
         },
       ],
+      color: {
+        text: "orange-text-gradient",
+        border: "border-orange-500",
+        bg: "bg-orange-800/60",
+      },
       image: recordSite,
       source_code_link: "https://recordentertainment.com/",
       live_site: "https://recordentertainment.com/",

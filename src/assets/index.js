@@ -34,6 +34,15 @@ import moodforfood from "./mood-for-food.png";
 import recordSite from '../assets/record-site.png'
 
 import profilePic from '../assets/Kevin.jpg'
+import charlesArmon from '../assets/charlesArmon.jpg'
+import conceptLogo1 from '../assets/conceptLogo1.png'
+import updatedLogo from '../assets/updatedLogo.png'
+import AnimatedLogo from '../assets/AnimatedLogo.mp4'
+import WhiteAnimatedLogo from '../assets/WhiteAnimatedLogo.mp4'
+import AstronautLogoPng from '../assets/AstronautLogo.png'
+import AstronautLogoSvg from '../assets/AstronautLogo.svg'
+import favicon from '../assets/favicon.png'
+import FilmShareFeed from '../assets/FilmShareFeed.png'
 
 export {
   logo,
@@ -68,4 +77,13 @@ export {
   moodforfood,
   recordSite,
   profilePic,
+  charlesArmon,
+  conceptLogo1,
+  updatedLogo,
+  AnimatedLogo,
+  WhiteAnimatedLogo,
+  AstronautLogoPng,
+  AstronautLogoSvg,
+  favicon,
+  FilmShareFeed,
 };

@@ -14,13 +14,15 @@ const Projects = () => {
 
 
     return (
-        <div className='relative z-0 bg-primary'>
+        <div className='relative z-0 bg-primary flex flex-col items-center justify-center'>
             <Navbar />
             <StarsCanvas />
             {/* <div className='absolute z-10'>
                 <RocketCanvas />
             </div> */}
-            <AllProjects />
+            <div className='flex w-ful md:w-[70%]'>
+                <AllProjects />
+            </div>
             <Footer />
         </div>
     )

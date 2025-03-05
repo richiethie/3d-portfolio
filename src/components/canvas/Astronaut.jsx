@@ -81,43 +81,43 @@ const Astronauts = ({ isMobile }) => {
   }, [actions]);
 
   // Track scroll position and update astronaut movement
-  useEffect(() => {
-    const handleScroll = () => {
-      if (astronautRef.current) {
-        // Get scroll value and normalize it
-        const scrollY = window.scrollY || window.pageYOffset;
-        const scrollFactor = scrollY / window.innerHeight;  // Normalize scroll (0 to 1 range)
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     if (astronautRef.current) {
+  //       // Get scroll value and normalize it
+  //       const scrollY = window.scrollY || window.pageYOffset;
+  //       const scrollFactor = scrollY / window.innerHeight;  // Normalize scroll (0 to 1 range)
 
-        // Adjust these values to move the astronaut accordingly
-        // ADD TERNERY FOR MOBILE
-        const startY = isMobile ? -4.2 : -4.2;  // Initial Y position
-        const endY = startY - scrollFactor * 200;  // Y-axis movement
+  //       // Adjust these values to move the astronaut accordingly
+  //       // ADD TERNERY FOR MOBILE
+  //       const startY = isMobile ? -4.2 : -4.2;  // Initial Y position
+  //       const endY = startY - scrollFactor * 200;  // Y-axis movement
 
-        const startZ = isMobile ? 0 : -2;  // Initial Z position
-        const endZ = startZ - scrollFactor * 350;  // Z-axis movement (moves backward as scroll increases)
+  //       const startZ = isMobile ? 0 : -2;  // Initial Z position
+  //       const endZ = startZ - scrollFactor * 350;  // Z-axis movement (moves backward as scroll increases)
 
-        const startX = isMobile ? 0 : 1;  // Initial X position
-        const endX = startX - scrollFactor * 300;  // X-axis movement (moves left as scroll increases)
+  //       const startX = isMobile ? 0 : 1;  // Initial X position
+  //       const endX = startX - scrollFactor * 300;  // X-axis movement (moves left as scroll increases)
 
-        // Adjust rotation values (rotating around the Y-axis)
-        const startRotationX = 0.1;  // Initial Y-axis rotation
-        const endRotationX = startRotationX + scrollFactor * Math.PI;
-        const startRotationY = 0.8;  // Initial Y-axis rotation
-        const endRotationY = startRotationY + scrollFactor * Math.PI * 2;
+  //       // Adjust rotation values (rotating around the Y-axis)
+  //       const startRotationX = 0.1;  // Initial Y-axis rotation
+  //       const endRotationX = startRotationX + scrollFactor * Math.PI;
+  //       const startRotationY = 0.8;  // Initial Y-axis rotation
+  //       const endRotationY = startRotationY + scrollFactor * Math.PI * 2;
 
-        // Update the astronaut's position
-        astronautRef.current.position.set(
-          endX,  // X position (moves left)
-          endY,  // Y position (moves up)
-          endZ   // Z position (moves backward)
-        );
-        astronautRef.current.rotation.set(endRotationX, endRotationY, 0);
-      }
-    };
+  //       // Update the astronaut's position
+  //       astronautRef.current.position.set(
+  //         endX,  // X position (moves left)
+  //         endY,  // Y position (moves up)
+  //         endZ   // Z position (moves backward)
+  //       );
+  //       astronautRef.current.rotation.set(endRotationX, endRotationY, 0);
+  //     }
+  //   };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   return (
     <group>

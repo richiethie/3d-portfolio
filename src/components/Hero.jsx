@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 
 import { styles } from '../styles'
-// import { ComputersCanvas } from './canvas'
 import { AstronautsCanvas } from './canvas'
 
 const Hero = () => {
@@ -19,7 +18,6 @@ const Hero = () => {
         </div>
 
       </div>
-      {/* <ComputersCanvas /> */}
       <div className='absolute top-[0px] h-[310px] w-[100%] z-10'></div>
         <AstronautsCanvas />
 
